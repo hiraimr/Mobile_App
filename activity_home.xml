@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:padding="16dp">
+
+<ImageView
+android:id="@+id/location_icon"
+android:layout_width="40dp"
+android:layout_height="40dp"
+android:src="@drawable/ic_location_icon"
+    android:contentDescription="Location Icon"
+    android:layout_marginTop="32dp"
+    android:layout_alignParentStart="true"/>
+
+<TextView
+android:id="@+id/location_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Your Location"
+    android:textSize="32sp"
+    android:textColor="#FFFFFF"
+    android:layout_marginStart="48dp"
+    android:layout_marginTop="32dp" />
+
+<TextView
+android:id="@+id/city_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="City"
+    android:textSize="24sp"
+    android:textColor="#FFFFFF"
+    android:layout_below="@id/location_text"
+    android:layout_marginTop="8dp" />
+
+<EditText
+android:id="@+id/search_input"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Search pizza"
+android:background="@android:color/white"
+android:padding="10dp"
+android:layout_below="@id/city_text"
+android:layout_marginTop="16dp" />
+
+<TextView
+android:id="@+id/message_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="We'll be there soon - hang tight!"
+android:textSize="18sp"
+android:textColor="#FFFFFF"
+android:layout_below="@id/search_input"
+android:layout_marginTop="20dp" />
+
+<Button
+android:id="@+id/explore_options_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="EXPLORE OTHER OPTIONS"
+android:layout_below="@id/message_text"
+android:layout_marginTop="20dp"
+android:backgroundTint="@color/colorAccent" />
+    </RelativeLayout>
