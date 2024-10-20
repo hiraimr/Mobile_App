@@ -37,6 +37,15 @@
             android:name=".HomeActivity"
             android:exported="true">
         </activity>
+
+        <activity
+            android:name=".DiningActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LiveActivity"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -45,7 +54,18 @@
             android:name=".MainActivity"
             android:exported="true">
         </activity>
-
+        <activity
+            android:name=".FiltersActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CarnivalActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".OffActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

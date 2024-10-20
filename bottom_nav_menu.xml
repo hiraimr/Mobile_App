@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_delivery"
+        android:icon="@drawable/ic_delivery"
+        android:title="Delivery" />
+
+    <item
+        android:id="@+id/navigation_dining"
+        android:icon="@drawable/ic_dining"
+        android:title="Dining" />
+
+    <item
+        android:id="@+id/navigation_live"
+        android:icon="@drawable/ic_live"
+        android:title="Live" />
+</menu>

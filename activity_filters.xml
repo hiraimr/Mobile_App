@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Sorting Section Header -->
+    <TextView
+        android:id="@+id/sort_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_marginBottom="8dp" />
+
+    <!-- RadioGroup for Sorting Options -->
+    <RadioGroup
+        android:id="@+id/sort_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Relevance -->
+        <RadioButton
+            android:id="@+id/sort_by_relevance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relevance" />
+
+        <!-- Rating: High to Low -->
+        <RadioButton
+            android:id="@+id/sort_by_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: High To Low" />
+
+        <!-- Offer: High to Low -->
+        <RadioButton
+            android:id="@+id/sort_by_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer: High To Low" />
+
+        <!-- Cost: Low to High -->
+        <RadioButton
+            android:id="@+id/sort_by_price_low_to_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost: Low To High" />
+
+        <!-- Cost: High to Low -->
+        <RadioButton
+            android:id="@+id/sort_by_price_high_to_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost: High To Low" />
+
+        <!-- Distance: Low to High -->
+        <RadioButton
+            android:id="@+id/sort_by_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance: Low To High" />
+    </RadioGroup>
+
+    <!-- Buttons for Clear All and Apply -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Clear All Button -->
+        <Button
+            android:id="@+id/clear_all_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear all"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/transparent" />
+
+        <!-- Apply Button -->
+        <Button
+            android:id="@+id/apply_filters_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply" />
+    </LinearLayout>
+
+</LinearLayout>
