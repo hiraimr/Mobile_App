@@ -1,0 +1,98 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiningActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search restaurants"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/d1"
+        app:layout_constraintTop_toBottomOf="@id/search_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        android:scaleType="centerCrop"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/filters_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Filters"
+        app:layout_constraintTop_toBottomOf="@id/top_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/carnival_offers_button"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/carnival_offers_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Carnival offers"
+        app:layout_constraintTop_toBottomOf="@id/top_image"
+        app:layout_constraintStart_toEndOf="@id/filters_button"
+        app:layout_constraintEnd_toStartOf="@id/offers_button"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/offers_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="50% OFF"
+        app:layout_constraintTop_toBottomOf="@id/top_image"
+        app:layout_constraintStart_toEndOf="@id/carnival_offers_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp" />
+
+    <ImageView
+        android:id="@+id/bottom_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/d2"
+        app:layout_constraintTop_toBottomOf="@id/filters_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/new_image"
+        app:layout_constraintDimensionRatio="16:9"
+        android:scaleType="centerCrop"
+        android:layout_margin="16dp"/>
+
+    <ImageView
+        android:id="@+id/new_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/d3"
+        app:layout_constraintTop_toBottomOf="@id/bottom_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        android:scaleType="centerCrop"
+        android:layout_margin="16dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
