@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/editTextBackground"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:contentDescription="Search icon"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/searchFilterEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search here"
+            android:inputType="text" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkboxCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit Card" />
+
+    <CheckBox
+        android:id="@+id/checkboxServesAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serves Alcohol" />
+
+    <CheckBox
+        android:id="@+id/checkboxOpenNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Now" />
+
+    <CheckBox
+        android:id="@+id/checkboxWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi" />
+
+    <CheckBox
+        android:id="@+id/checkboxOutdoorSeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outdoor Seating" />
+
+    <CheckBox
+        android:id="@+id/checkboxBookTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Table" />
+
+    <CheckBox
+        android:id="@+id/checkboxVegOnly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veg-only" />
+
+</LinearLayout>

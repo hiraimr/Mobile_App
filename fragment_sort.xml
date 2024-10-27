@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/sortOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/sort_by_relevance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relevance" />
+
+        <RadioButton
+            android:id="@+id/sort_by_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: High To Low" />
+
+        <RadioButton
+            android:id="@+id/sort_by_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer: High To Low" />
+
+        <RadioButton
+            android:id="@+id/sort_by_price_low_to_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost: Low To High" />
+
+        <RadioButton
+            android:id="@+id/sort_by_price_high_to_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost: High To Low" />
+
+        <RadioButton
+            android:id="@+id/sort_by_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance: Low To High" />
+    </RadioGroup>
+</LinearLayout>
