@@ -1,0 +1,142 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Zomato Gold Logo and Title -->
+<TextView
+    android:id="@+id/zomatoGoldTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="zomato GOLD"
+    android:textSize="24sp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:drawableLeft="@drawable/ic_gold_icon"
+    android:drawablePadding="8dp"
+    android:gravity="center" />
+
+    <!-- Subtitle -->
+<TextView
+android:id="@+id/unlimitedDeliveries"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="UNLIMITED FREE DELIVERIES  MORE"
+android:textColor="#D4AF37"
+android:layout_marginTop="8dp"
+android:gravity="center"
+android:textSize="14sp" />
+
+    <!-- Pricing -->
+<TextView
+android:id="@+id/price"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="₹20"
+android:textSize="40sp"
+android:textColor="#FFFFFF"
+android:layout_gravity="center"
+android:layout_marginTop="16dp" />
+
+<TextView
+android:id="@+id/priceDescription"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="for 3 months"
+android:textColor="#FFFFFF"
+android:textSize="16sp"
+android:layout_gravity="center" />
+
+    <!-- Join Button -->
+<Button
+android:id="@+id/joinGoldButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Join Gold"
+android:backgroundTint="#D4AF37"
+android:textColor="#121212"
+android:layout_gravity="center"
+android:layout_marginTop="16dp"
+android:padding="10dp" />
+
+    <!-- Gold Benefits Section -->
+<TextView
+android:id="@+id/benefitsTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="GOLD BENEFITS"
+android:textColor="#FFFFFF"
+android:textSize="18sp"
+android:layout_marginTop="24dp"
+android:gravity="center"
+android:textStyle="bold" />
+
+    <!-- Benefit 1 -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="8dp">
+
+<ImageView
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/ic_delivery"
+    android:contentDescription="Free delivery icon" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:text="Free delivery"
+    android:textColor="#FFFFFF"
+    android:textSize="16sp" />
+</LinearLayout>
+
+<TextView
+android:id="@+id/freeDeliveryDescription"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="At all restaurants under 7 km, on orders above ₹199. May not be applicable at a few restaurants that manage their own delivery"
+android:textColor="#CCCCCC"
+android:textSize="14sp"
+android:paddingStart="32dp"
+android:paddingEnd="16dp" />
+
+    <!-- Benefit 2 -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="8dp"
+android:layout_marginTop="8dp">
+
+<ImageView
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/ic_discount"
+    android:contentDescription="Discount icon" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:text="Up to 30% extra off"
+    android:textColor="#FFFFFF"
+    android:textSize="16sp" />
+</LinearLayout>
+
+<TextView
+android:id="@+id/discountDescription"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Above all existing offers at 20,000+ partner restaurants across India"
+android:textColor="#CCCCCC"
+android:textSize="14sp"
+android:paddingStart="32dp"
+android:paddingEnd="16dp" />
+
+    </LinearLayout>
